@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Second Mondrian Project</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            border: 0;
+        }
+        .second-grid-container{
+            display: grid;
+            height: 570px;
+            width: 790px;
+            background-color: black;
+            border: 10px solid black;
+         
+            gap: 10px;
+            grid-template-columns: 250px 50px 100px 100px 250px;
+            grid-template-rows: 200px 150px 200px;
+        }
+        .items{
+            background-color: bisque;
+        }
+        .yellow1{
+            background-color: #ffd700;
+            grid-column: span 2;
+        }
+        .white1{
+            background-color: white;
+            grid-column: span 2;
+        }
+        .blue1{
+            background-color: #00008b;
+            grid-row: span 2;
+        }
+        .blue2{
+            background-color: #00008b;
+            grid-row: span 2;
+        }
+        .red{
+            background-color: red;
+            grid-area: 2/2/2/5;
+        }
+        .white2{
+            background-color: white;
+            grid-column: span 2;
+        }
+        .yellow2{
+            background-color: #ffd700;
+            grid-column: span 2;
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="second-grid-container">
+            <div class="items yellow1"></div>
+            <div class="items white1"></div>
+            <div class="items blue1"></div>
+            <div class="items blue2"></div>
+            <div class="items red"></div>
+            <div class="items white2"></div>
+            <div class="items yellow2"></div>
+        </div>
+
+    </body>
+    
+
+</html>
